@@ -5,14 +5,14 @@
   --secondary-color: #53d4ba;
   --heading-font-family: "Josefin Sans", sans-serif;
   --paragraph-font-family: "Open Sans", sans-serif;
-  --link-font: monospace;
+  --font-mono: monospace;
 }
 
 body {
   background-color: var(--background-color);
 }
 .introduction {
-  padding: 100px;
+  padding-top: 100px;
   margin: 0 112px;
 }
 .introduction h1 {
@@ -20,25 +20,49 @@ body {
   font-size: 80px;
   color: var(--heading-color);
 }
-.introduction h2 {
+h2 {
   font-family: var(--paragraph-font-family);
   font-size: 30px;
   font-weight: normal;
   color: var(--primary-color);
 }
-.introduction p {
-  font-family: var(--link-font);
+.introduction p,
+.title {
+  font-family: var(--font-mono);
   color: var(--secondary-color);
-  font-size: 16px;
+  font-size: 18px;
 }
 .btn-branding {
+  background-color: var(--secondary-color);
   padding: 20px 28px;
-  color: var(--secondary-color);
+  color: var(--background-color);
   border: 1px solid var(--secondary-color);
-  font-family: var(--link-font);
+  font-family: var(--font-mono);
   margin-top: 50px;
   font-size: 16px;
 }
 .btn-branding:hover {
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+p {
+  font-family: var(--paragraph-font-family);
+  color: var(--primary-color);
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.btn-branding-outline {
+  padding: 20px 28px;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  font-family: var(--font-mono);
+  margin-top: 50px;
+  font-size: 16px;
+}
+.btn-branding-outline:hover {
   background-color: var(--secondary-color);
+}
+.descriprion {
+  padding: 40px 20px 0 0;
 }
