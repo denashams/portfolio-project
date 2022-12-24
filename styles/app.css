@@ -66,3 +66,17 @@ p {
 .descriprion {
   padding: 40px 20px 0 0;
 }
+@media (max-width: 768px) {
+  .descriprion {
+    padding: 0;
+  }
+  .introduction h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .introduction {
+    margin: 15px;
+  }
+}
