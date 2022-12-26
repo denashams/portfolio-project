@@ -28,6 +28,11 @@ h2 {
   font-weight: normal;
   color: var(--primary-color);
 }
+hr {
+  height: 1px;
+  background-color: var(--primary-color);
+  border: none;
+}
 
 .introduction p,
 .title {
@@ -35,7 +40,7 @@ h2 {
   color: var(--secondary-color);
   font-size: 18px;
 }
-.project-section {
+.fearured-section {
   border: 1px solid var(--secondary-color);
   border-radius: 4px;
   padding: 30px;
@@ -91,6 +96,13 @@ p {
     text-align: center;
     padding: 0;
   }
+  .content {
+    text-align: center;
+  }
+  .btn-branding-outline {
+    font-size: 10px;
+    padding: 5px;
+  }
 }
 
 .pic {
@@ -103,7 +115,7 @@ p {
   filter: none;
   -webkit-filter: none;
 }
-.description-text {
+.featured-description {
   background-color: var(--paragraph-background);
   box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
   padding: 25px;
@@ -118,19 +130,26 @@ p {
   padding: 30px;
 }
 
-.about-section h1 {
+.content h1 {
   font-size: 64;
 }
-.about-section h2 {
+.content h2 {
   font-size: 20px;
   font-weight: 600;
 }
-.about-section p {
+.content h3 {
+  font-size: 24px;
+  color: var(--heading-color);
+}
+.content-container p {
   font-size: 16px;
 }
-.about-section {
+.content-container {
   padding: 100px;
 }
-.about-section-content {
+.content {
   margin: 30px;
+}
+.project-section {
+  padding: 30px 0 10px 0;
 }
