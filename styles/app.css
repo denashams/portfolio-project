@@ -134,8 +134,9 @@ p {
   font-size: 64;
 }
 .content h2 {
-  font-size: 20px;
+  font-size: 35px;
   font-weight: 600;
+  padding-bottom: 15px;
 }
 .content h3 {
   font-size: 24px;
