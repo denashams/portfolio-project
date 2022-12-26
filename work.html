@@ -17,6 +17,10 @@
     />
     <link rel="stylesheet" href="/styles/app.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dena is a front-end developer and architect based in Iran. This is a page about Dena's work"
+    />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
@@ -31,8 +35,8 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">
-          <img src="/images/logo.png" alt="" class="logo ms-4 mt-2" />
+        <a class="navbar-brand" href="/" title="Homepage">
+          <img src="/images/logo.png" alt="Dena logo" class="logo ms-4 mt-2" />
         </a>
         <button
           class="navbar-toggler navbar-dark"
@@ -48,16 +52,27 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/">Home</a>
+              <a class="nav-link" aria-current="page" href="/" title="Homepage"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/about.html">About</a>
+              <a class="nav-link" href="/about.html" title="About Dena page"
+                >About</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="/work.html">Work</a>
+              <a
+                class="nav-link active"
+                href="/work.html"
+                title="Dena's Work page"
+                >Work</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/contact.html">Contact</a>
+              <a class="nav-link" href="/contact.html" title="Contact Dena page"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
@@ -77,9 +92,10 @@
                 wrote this application using html, css, bootstrap, javascript.
               </p>
               <a
-                href="https://www.shecodes.io/workshops/shecodes-plus-4949670b-7d5f-4d9a-8bf1-d95828c04dc2/projects/1290530"
+                href="https://github.com/denashams/vanilla-weather-app"
                 target="_blank"
                 class="btn btn-branding-outline"
+                title="link to weather app Github repository"
                 >Check out the code on github</a
               >
             </div>
@@ -87,7 +103,7 @@
           <div class="col d-none d-lg-block">
             <img
               src="/images/weather.png"
-              alt=""
+              alt="weather app screenshot"
               class="img-fluid rounded pic"
             />
           </div>
@@ -97,7 +113,7 @@
           <div class="col-6 d-none d-lg-block">
             <img
               src="/images/croissant.png"
-              alt=""
+              alt="croissant site screenshot"
               class="img-fluid rounded pic"
             />
           </div>
@@ -109,9 +125,10 @@
                 html, css, bootstrap.
               </p>
               <a
-                href="https://www.shecodes.io/workshops/shecodes-plus-4949670b-7d5f-4d9a-8bf1-d95828c04dc2/projects/1290530"
+                href="https://github.com/denashams/multiple-page-croissant-site"
                 target="_blank"
                 class="btn btn-branding-outline"
+                title="link to croissant site Github repository"
                 >Check out the code on github</a
               >
             </div>
@@ -131,6 +148,7 @@
                 href="https://www.shecodes.io/workshops/shecodes-plus-4949670b-7d5f-4d9a-8bf1-d95828c04dc2/projects/1290530"
                 target="_blank"
                 class="btn btn-branding-outline"
+                title="link to vangogh site"
                 >Check out the code on github</a
               >
             </div>
@@ -138,20 +156,53 @@
           <div class="col-6 d-none d-lg-block">
             <img
               src="/images/vangogh.png"
-              alt=""
+              alt="van gogh site screenshot"
               class="img-fluid rounded pic"
             />
+            <svg xmlns="http://www.w3.org/2000/svg">
+              <filter id="svgTint">
+                <feColorMatrix
+                  type="matrix"
+                  values="0.11372549019607843 0.11372549019607843 0.11372549019607843  0 0 0.6039215686274509 0.6039215686274509 0.6039215686274509  0 0 0.43529411764705883 0.43529411764705883 0.43529411764705883  0 0  0 0 0 1 0"
+                />
+              </filter>
+            </svg>
           </div>
         </div>
       </div>
+      <footer>
+        <p class="text-center lh-lg">
+          Email me at
+          <a href="mailto: dena@gmail.com" title="email Dena"
+            >dena.sh@gmail.com</a
+          >
+          <br />
+          or
+          <br />
+          Follow Me on Social Media
+        </p>
+        <div class="flex-container social-icons">
+          <a href="https://www.instagram.com/" title="instagram">
+            <i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.twitter.com/" title="twitter"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="https://www.linkedin.com/" title="linkedin"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+        <p class="title text-center mt-3">
+          This project was coded by Dena and it is
+          <a
+            href="https://github.com/denashams/portfolio-project"
+            title="link to github"
+            target="_blank"
+          >
+            open source</a
+          >.
+        </p>
+      </footer>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg">
-      <filter id="svgTint">
-        <feColorMatrix
-          type="matrix"
-          values="0.11372549019607843 0.11372549019607843 0.11372549019607843  0 0 0.6039215686274509 0.6039215686274509 0.6039215686274509  0 0 0.43529411764705883 0.43529411764705883 0.43529411764705883  0 0  0 0 0 1 0"
-        />
-      </filter>
-    </svg>
   </body>
 </html>
