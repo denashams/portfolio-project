@@ -1,9 +1,8 @@
 :root {
-  --background-color: #0a192f;
-  --paragraph-background: #112240;
-  --heading-color: #ccd6f6;
-  --primary-color: #8892b0;
-  --secondary-color: #53d4ba;
+  --background-color: #0c0c0c;
+  --heading-color: #ffffff;
+  --primary-color: #e2b8aa;
+  --secondary-color: #2d9687;
   --heading-font-family: "Josefin Sans", sans-serif;
   --paragraph-font-family: "Open Sans", sans-serif;
   --font-mono: monospace;
@@ -46,6 +45,18 @@ hr {
   height: 1px;
   background-color: var(--primary-color);
   border: none;
+}
+footer a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+footer .title a {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--secondary-color);
 }
 
 .introduction p,
@@ -93,36 +104,11 @@ p {
 .descriprion {
   padding: 40px 20px 0 0;
 }
-@media (max-width: 768px) {
-  .descriprion {
-    padding: 0;
-  }
-  h1 {
-    font-size: 40px;
-  }
-  h2 {
-    font-size: 20px;
-  }
-  .introduction {
-    margin: 15px;
-  }
-  .about-section {
-    text-align: center;
-    padding: 0;
-  }
-  .content {
-    text-align: center;
-  }
-  .btn-branding-outline {
-    font-size: 10px;
-    padding: 5px;
-  }
-}
 
 .pic {
-  filter: contrast(58%) saturate(79%) url(#svgTint);
-  -webkit-filter: contrast(58%) saturate(79%) url(#svgTint);
-  transition: all 300ms ease-in-out;
+  filter: sepia(80%);
+  -webkit-filter: sepia(80%);
+  transition: all 200ms ease-in-out;
   -webkit-transition: -webkit-filter 200ms ease-in-out;
 }
 .pic:hover {
@@ -130,8 +116,11 @@ p {
   -webkit-filter: none;
 }
 .featured-description {
-  background-color: var(--paragraph-background);
+  color: var(--background-color);
+  background-color: var(--primary-color);
   box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  border-radius: 4px;
+  opacity: 50%;
   padding: 25px;
 }
 footer {
@@ -159,6 +148,10 @@ footer {
   font-size: 24px;
   color: var(--heading-color);
 }
+.content a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
 .content-container p {
   font-size: 16px;
 }
@@ -170,4 +163,30 @@ footer {
 }
 .project-section {
   padding: 0px 0 10px 0;
+}
+
+@media (max-width: 768px) {
+  .descriprion {
+    padding: 0;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .introduction {
+    margin: 15px;
+  }
+  .about-section {
+    text-align: center;
+    padding: 0;
+  }
+  .content {
+    text-align: center;
+  }
+  .btn-branding-outline {
+    font-size: 10px;
+    padding: 5px;
+  }
 }
